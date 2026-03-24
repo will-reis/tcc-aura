@@ -1,0 +1,577 @@
+﻿NIST CSF 2.0 - Avaliação de Maturidade;;;;;;;;;
+Função;Categoria;Subcategoria;Descrição da subcategoria;Nivel de Maturidade Atual;Pontuação Atual;Cenário Atual;Evidência/Fonte;Gaps;Recomendações
+GOVERNAR (GV);Contexto Organizacional (GV.OC);GV. OC-01;"A missão organizacional é compreendida e informa a gestão de riscos em cibersegurança
+
+Exemplo 1: Compartilhar a missão da organização (por exemplo, por meio de declarações de visão e missão, marketing e estratégias de serviço) para fornecer uma base para identificar riscos que possam dificultar essa missão";;;;;;
+GOVERNAR (GV);Contexto Organizacional (GV.OC);GV. OC-02;"Stakeholders internos e externos são compreendidos, e suas necessidades e expectativas em relação à gestão de riscos em cibersegurança são compreendidas e consideradas
+
+Exemplo 1: Identificar stakeholders internos relevantes e suas expectativas relacionadas à cibersegurança (por exemplo, expectativas de desempenho e risco de diretores, diretores e consultores; expectativas culturais dos funcionários)
+Exemplo 2: Identificar partes interessadas externas relevantes e suas expectativas relacionadas à cibersegurança (por exemplo, expectativas de privacidade dos clientes, expectativas de negócios em relação a parcerias, expectativas de conformidade dos reguladores, expectativas éticas da sociedade)";;;;;;
+GOVERNAR (GV);Contexto Organizacional (GV.OC);GV. OC-03;"Os requisitos legais, regulatórios e contratuais relacionados à cibersegurança – incluindo obrigações de privacidade e liberdades civis – são compreendidos e gerenciados
+
+Exemplo 1: Determinar um processo para rastrear e gerenciar requisitos legais e regulatórios relativos à proteção das informações dos indivíduos (por exemplo, Lei de Portabilidade e Responsabilidade de Seguros de Saúde, Lei de Privacidade do Consumidor da Califórnia, Regulamento Geral de Proteção de Dados)
+Exemplo 2: Determinar um processo para rastrear e gerenciar os requisitos contratuais para a gestão de cibersegurança das informações de fornecedores, clientes e parceiros
+Exemplo 3: Alinhar a estratégia de cibersegurança da organização com os requisitos legais, regulatórios e contratuais";;;;;;
+GOVERNAR (GV);Contexto Organizacional (GV.OC);GV. OC-04;"Objetivos críticos, capacidades e serviços dos quais as partes interessadas externas dependem ou esperam da organização são compreendidos e comunicados
+
+Exemplo 1: Estabelecer critérios para determinar a criticidade de capacidades e serviços conforme avaliados por partes interessadas internas e externas
+Exemplo 2: Determinar (por exemplo, a partir de uma análise de impacto empresarial) os ativos e operações empresariais que são vitais para alcançar os objetivos da missão e o possível impacto de uma perda (ou perda parcial) dessas operações
+Exemplo 3: Estabelecer e comunicar objetivos de resiliência (por exemplo, objetivos de tempo de recuperação) para entregar capacidades e serviços críticos em vários estados operacionais (por exemplo, sob ataque, durante a recuperação, operação normal)";;;;;;
+GOVERNAR (GV);Contexto Organizacional (GV.OC);GV. OC-05;"Resultados, capacidades e serviços dos quais a organização depende são compreendidos e comunicados
+
+Exemplo 1: Criar um inventário das dependências da organização em relação a recursos externos (por exemplo, instalações, provedores de hospedagem baseados em nuvem) e suas relações com ativos organizacionais e funções de negócios
+Exemplo 2: Identificar e documentar dependências externas que possam ser pontos de falha para as capacidades e serviços críticos da organização, e compartilhar essas informações com o pessoal apropriado";;;;;;
+GOVERNAR (GV);Estratégia de Gestão de Riscos (GV.RM);GV. RM-01;"Os objetivos de gestão de riscos são estabelecidos e acordados pelas partes interessadas da organização
+
+Exemplo 1: Atualizar os objetivos de gestão de riscos de cibersegurança de curto e longo prazo como parte do planejamento estratégico anual e quando ocorrem grandes mudanças
+Exemplo 2: Estabelecer objetivos mensuráveis para a gestão de riscos de cibersegurança (por exemplo, gerenciar a qualidade do treinamento dos usuários, garantir proteção adequada contra riscos para sistemas de controle industrial)
+Exemplo 3: Líderes seniores concordam sobre os objetivos de cibersegurança e os utilizam para medir e gerenciar riscos e desempenho";;;;;;
+GOVERNAR (GV);Estratégia de Gestão de Riscos (GV.RM);GV. RM-02;"Declarações de apetite ao risco e tolerância ao risco são estabelecidas, comunicadas e mantidas
+
+Exemplo 1: Determinar e comunicar declarações de apetite pelo risco que transmitam expectativas sobre o nível adequado de risco para a organização
+Exemplo2: Traduzir declarações de apetite ao risco em declarações específicas, mensuráveis e amplamente compreensíveis de tolerância ao risco
+Exemplo 3: Refinar periodicamente os objetivos organizacionais e o apetite pelo risco com base na exposição ao risco conhecida e no risco residual";;;;;;
+GOVERNAR (GV);Estratégia de Gestão de Riscos (GV.RM);GV. RM-03;"As atividades e resultados de gestão de riscos em cibersegurança estão incluídos nos processos de gestão de riscos empresariais
+
+Exemplo 1: Agregar e gerenciar riscos de cibersegurança junto com outros riscos empresariais (por exemplo, conformidade, financeiro, operacional, regulatório, reputacional, segurança)
+Exemplo 2: Incluir gestores de riscos de cibersegurança no planejamento de gestão de riscos empresariais
+Exemplo 3: Estabelecer critérios para a escalada dos riscos de cibersegurança dentro da gestão de riscos empresariais";;;;;;
+GOVERNAR (GV);Estratégia de Gestão de Riscos (GV.RM);GV. RM-04;"A direção estratégica que descreve as opções adequadas de resposta ao risco é estabelecida e comunicada
+
+Exemplo 1: Especifique critérios para aceitar e evitar riscos de cibersegurança para várias classificações de dados
+Exemplo 2: Determine se deve adquirir um seguro de cibersegurança
+Exemplo 3: Condições de documentos sob as quais modelos de responsabilidade compartilhada são aceitáveis (por exemplo, terceirização de certas funções de cibersegurança, terceirização de transações financeiras em nome da organização, uso de serviços públicos baseados em nuvem)";;;;;;
+GOVERNAR (GV);Estratégia de Gestão de Riscos (GV.RM);GV. RM-05;"Linhas de comunicação em toda a organização são estabelecidas para riscos de cibersegurança, incluindo riscos de fornecedores e outras terceirizadas
+
+Exemplo 1: Determinar como atualizar executivos seniores, diretores e gestão sobre a postura de cibersegurança da organização em intervalos acordados
+Exemplo 2: Identificar como todos os departamentos da organização – como gestão, operações, auditores internos, jurídico, aquisições, segurança física e RH – irão se comunicar entre si sobre riscos de cibersegurança";;;;;;
+GOVERNAR (GV);Estratégia de Gestão de Riscos (GV.RM);GV. RM-06;"Um método padronizado para calcular, documentar, categorizar e priorizar riscos de cibersegurança é estabelecido e comunicado
+
+Exemplo 1: Estabelecer critérios para o uso de uma abordagem quantitativa para análise de riscos em cibersegurança e especificar fórmulas de probabilidade e exposição
+Exemplo 2: Criar e usar modelos (por exemplo, um registro de risco) para documentar informações de risco de cibersegurança (por exemplo, descrição de risco, exposição, tratamento e titularidade)
+Exemplo 3: Estabelecer critérios para priorização de riscos nos níveis apropriados dentro da empresa
+Exemplo 4: Utilize uma lista consistente de categorias de risco para apoiar a integração, agregação e comparação de riscos de cibersegurança";;;;;;
+GOVERNAR (GV);Estratégia de Gestão de Riscos (GV.RM);GV. RM-07;"Oportunidades estratégicas (ou seja, riscos positivos) são caracterizadas e incluídas nas discussões organizacionais sobre riscos de cibersegurança
+
+Exemplo 1: Definir e comunicar orientações e métodos para identificar oportunidades e incluí-las em discussões sobre riscos (por exemplo, análises SWOT de pontos fortes, fraquezas, oportunidades e ameaças)
+Exemplo 2: Identifique metas de extensão e documente-as
+Exemplo 3: Calcular, documentar e priorizar riscos positivos junto com riscos negativos";;;;;;
+GOVERNAR (GV);Papéis, Responsabilidades e Autoridades (GV. RR);GV. RR-01;"A liderança organizacional é responsável e responsável pelos riscos de cibersegurança e promove uma cultura consciente do risco, ética e em constante melhoria
+
+Exemplo 1: Líderes (por exemplo, diretores) concordam sobre seus papéis e responsabilidades no desenvolvimento, implementação e avaliação da estratégia de cibersegurança da organização
+Exemplo 2: Compartilhe as expectativas dos líderes em relação a uma cultura segura e ética, especialmente quando eventos atuais oferecem a oportunidade de destacar exemplos positivos ou negativos de gestão de riscos em cibersegurança
+Exemplo 3: Os líderes orientam o CISO a manter uma estratégia abrangente de risco de cibersegurança e a revisá-la e atualizá-la pelo menos anualmente e após grandes eventos
+Exemplo 4: Realizar revisões para garantir autoridade adequada e coordenação entre aqueles responsáveis pela gestão do risco de cibersegurança";;;;;;
+GOVERNAR (GV);Papéis, Responsabilidades e Autoridades (GV. RR);GV. RR-02;"Funções, responsabilidades e autoridades relacionadas à gestão de riscos de cibersegurança são estabelecidas, comunicadas, compreendidas e aplicadas
+
+Exemplo 1: Documentar papéis e responsabilidades de gestão de riscos em políticas
+Exemplo 2: Documente quem é responsável e responsável pelas atividades de gestão de riscos de cibersegurança e como essas equipes e indivíduos devem ser consultados e informados
+Exemplo 3: Incluir responsabilidades e requisitos de desempenho em cibersegurança nas descrições de pessoal
+Exemplo 4: Documente metas de desempenho para profissionais com responsabilidades de gestão de riscos em cibersegurança e meça periodicamente o desempenho para identificar áreas a melhorar
+Exemplo 5: Articular claramente as responsabilidades de cibersegurança dentro das operações, funções de risco e auditoria interna";;;;;;
+GOVERNAR (GV);Papéis, Responsabilidades e Autoridades (GV. RR);GV. RR-03;"Recursos adequados são alocados de acordo com a estratégia, funções, responsabilidades e políticas de risco de cibersegurança
+
+Exemplo 1: Realizar revisões periódicas de gestão para garantir que aqueles responsáveis por gestão de riscos de cibersegurança tenham a autoridade necessária
+Exemplo2: Identificar alocação e investimento de recursos em conformidade com a tolerância ao risco e a resposta
+Exemplo 3: Fornecer pessoas adequadas e adequadas, recursos de processos e recursos técnicos para apoiar a estratégia de cibersegurança";;;;;;
+GOVERNAR (GV);Papéis, Responsabilidades e Autoridades (GV. RR);GV. RR-04;"A cibersegurança está incluída nas práticas de recursos humanos
+
+Exemplo 1: Integrar considerações de gestão de riscos de cibersegurança nos processos de recursos humanos (por exemplo, triagem de pessoal, integração, notificação de mudanças, offboarding)
+Exemplo 2: Considere o conhecimento em cibersegurança um fator positivo nas decisões de contratação, treinamento e retenção
+Exemplo 3: Realizar verificações de antecedentes antes de integrar novos profissionais para funções sensíveis e, periodicamente, repetir verificações de antecedentes para profissionais com tais funções
+Exemplo 4: Definir e aplicar obrigações para que o pessoal esteja ciente, cumpra e cumpra políticas de segurança relacionadas às suas funções";;;;;;
+GOVERNAR (GV);Política (GV. PO);GV. PO-01;"A política para gerenciar riscos de cibersegurança é estabelecida com base no contexto organizacional, estratégia e prioridades de cibersegurança, sendo comunicada e aplicada
+
+Exemplo 1: Criar, disseminar e manter uma política de gestão de riscos compreensível e utilizável, com declarações de intenção, expectativas e direção da gestão
+Exemplo 2: Revisar periodicamente políticas e processos e procedimentos de apoio para garantir que estejam alinhados com os objetivos e prioridades da estratégia de gestão de riscos, bem como com a direção de alto nível da política de cibersegurança
+Exemplo 3: Exigir aprovação da alta administração em políticas
+Exemplo 4: Comunicar políticas de gestão de riscos em cibersegurança e processos e procedimentos de apoio em toda a organização
+Exemplo 5: Exigir que o pessoal confirme o recebimento da apólice na primeira contratação, anualmente, e sempre que a apólice for atualizada";;;;;;
+GOVERNAR (GV);Política (GV. PO);GV. PO-02;"A política de gerenciamento de riscos de cibersegurança é revisada, atualizada, comunicada e aplicada para refletir mudanças em requisitos, ameaças, tecnologia e missão organizacional
+
+Exemplo 1: Atualizar a política com base em revisões periódicas dos resultados da gestão de riscos de cibersegurança para garantir que a política e os processos e procedimentos de apoio mantenham adequadamente o risco em um nível aceitável
+Exemplo 2: Forneça um cronograma para revisar mudanças no ambiente de risco da organização (por exemplo, mudanças de risco ou nos objetivos da missão da organização) e comunice atualizações recomendadas de políticas
+Exemplo 3: Atualizar a política para refletir mudanças nos requisitos legais e regulatórios
+Exemplo 4: Atualizar a política para refletir mudanças na tecnologia (por exemplo, adoção de inteligência artificial) e mudanças no negócio (por exemplo, aquisição de um novo negócio, novos requisitos contratuais)";;;;;;
+GOVERNAR (GV);Supervisão (GV. OV);GV. OV-01;"Os resultados da estratégia de gestão de riscos em cibersegurança são revisados para informar e ajustar a estratégia e a direção
+
+Exemplo 1: Mese o quão bem a estratégia de gestão de riscos e os resultados de risco ajudaram líderes a tomar decisões e alcançar objetivos organizacionais
+Exemplo 2: Examinar se estratégias de risco de cibersegurança que dificultem operações ou inovação devem ser ajustadas";;;;;;
+GOVERNAR (GV);Supervisão (GV. OV);GV. OV-02;"A estratégia de gestão de riscos em cibersegurança é revisada e ajustada para garantir a cobertura dos requisitos e riscos organizacionais
+
+Exemplo 1: Revise os resultados da auditoria para confirmar se a estratégia existente de cibersegurança garantiu o cumprimento dos requisitos internos e externos
+Exemplo 2: Revise a supervisão de desempenho daqueles em funções relacionadas à cibersegurança para determinar se mudanças de políticas são necessárias
+Exemplo 3: Revisão da estratégia à luz de incidentes de cibersegurança";;;;;;
+GOVERNAR (GV);Supervisão (GV. OV);GV. OV-03;"O desempenho da gestão de riscos de cibersegurança organizacional é avaliado e revisado quanto aos ajustes necessários
+
+Exemplo 1: Revise os principais indicadores-chave de desempenho (KPIs) para garantir que as políticas e procedimentos de toda a organização atinjam os objetivos
+Exemplo 2: Revise os principais indicadores de risco (KRIs) para identificar riscos enfrentados pela organização, incluindo probabilidade e impacto potencial
+Exemplo 3: Coletar e comunicar métricas sobre gestão de riscos em cibersegurança com a alta liderança";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-01;"Um programa, estratégia, objetivos, políticas e processos de gestão de riscos da cadeia de suprimentos em cibersegurança são estabelecidos e acordados pelas partes interessadas da organização
+
+Exemplo 1: Estabelecer uma estratégia que expresse os objetivos do programa de gestão de riscos da cadeia de suprimentos em cibersegurança
+Exemplo 2: Desenvolver o programa de gestão de riscos da cadeia de suprimentos em cibersegurança, incluindo um plano (com marcos), políticas e procedimentos que orientem a implementação e melhoria do programa, e compartilhar as políticas e procedimentos com as partes interessadas da organização
+Exemplo 3: Desenvolver e implementar processos de programa com base na estratégia, objetivos, políticas e procedimentos acordados e realizados pelos stakeholders organizacionais
+Exemplo 4: Estabelecer um mecanismo interorganizacional que assegure o alinhamento entre funções que contribuem para a gestão de riscos da cadeia de suprimentos em cibersegurança, como cibersegurança, TI, operações, jurídico, recursos humanos e engenharia";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-02;"Os papéis e responsabilidades de cibersegurança para fornecedores, clientes e parceiros são estabelecidos, comunicados e coordenados interna e externamente
+
+Exemplo 1: Identificar um ou mais cargos ou cargos específicos que serão responsáveis e responsáveis pelo planejamento, financiamento e execução das atividades de gestão de riscos da cadeia de suprimentos em cibersegurança
+Exemplo 2: Documentar os papéis e responsabilidades de gestão de riscos da cadeia de suprimentos em cibersegurança em políticas
+Exemplo 3: Criar matrizes de responsabilidade para documentar quem será responsável e responsável pelas atividades de gestão de riscos da cadeia de suprimentos em cibersegurança e como essas equipes e indivíduos serão consultados e informados
+Exemplo 4: Incluir responsabilidades de gestão de riscos da cadeia de suprimentos em cibersegurança e requisitos de desempenho nas descrições de pessoal para garantir clareza e melhorar a responsabilidade
+Exemplo5: Documente metas de desempenho para profissionais com responsabilidades específicas de gestão de riscos em cibersegurança e as meça periodicamente para demonstrar e melhorar o desempenho
+Exemplo 6: Desenvolver papéis e responsabilidades para fornecedores, clientes e parceiros de negócios para tratar das responsabilidades compartilhadas pelos riscos de cibersegurança aplicáveis, e integrá-los às políticas organizacionais e acordos de terceiros aplicáveis
+Exemplo 7: Comunicar internamente os papéis e responsabilidades de gestão de riscos da cadeia de suprimentos em cibersegurança para terceiros
+Exemplo 8: Estabelecer regras e protocolos para o compartilhamento de informações e processos de reporte entre a organização e seus fornecedores";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-03;"A gestão de riscos da cadeia de suprimentos em cibersegurança é integrada aos processos de gestão de riscos empresariais e cibersegurança e empresas
+
+Exemplo 1: Identificar áreas de alinhamento e sobreposição com cibersegurança e gestão de riscos empresariais
+Exemplo 2: Estabelecer conjuntos integrados de controle para gestão de riscos em cibersegurança e gestão de riscos na cadeia de suprimentos em cibersegurança
+Exemplo 3: Integrar a gestão de riscos da cadeia de suprimentos em cibersegurança nos processos de melhoria
+Exemplo 4: Escalar riscos materiais de cibersegurança nas cadeias de suprimentos para a alta gestão e enfrentá-los no nível de gestão de riscos corporativos";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-04;"Os fornecedores são conhecidos e priorizados pela criticidade
+
+Exemplo 1: Desenvolver critérios para criticidade de fornecedores baseados, por exemplo, na sensibilidade dos dados processados ou possuídos pelos fornecedores, no grau de acesso aos sistemas da organização e na importância dos produtos ou serviços para a missão da organização
+Exemplo 2: Mantenha um registro de todos os fornecedores e priorize os fornecedores com base nos critérios de criticidade";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-05;"Requisitos para enfrentar riscos de cibersegurança nas cadeias de suprimentos são estabelecidos, priorizados e integrados em contratos e outros tipos de acordos com fornecedores e outras partes relevantes
+
+Exemplo 1: Estabelecer requisitos de segurança para fornecedores, produtos e serviços proporcionais ao seu nível de criticidade e impacto potencial caso comprometidos
+Exemplo 2: Incluir todos os requisitos de cibersegurança e cadeia de suprimentos que terceiros devem seguir e como a conformidade com esses requisitos pode ser verificada na linguagem contratual padrão
+Exemplo 3: Definir as regras e protocolos para o compartilhamento de informações entre a organização e seus fornecedores e fornecedores de subnível em acordos
+Exemplo 4: Gerenciar riscos incluindo requisitos de segurança em acordos com base em sua criticidade e impacto potencial caso comprometidos
+Exemplo 5: Definir requisitos de segurança em acordos de nível de serviço (SLAs) para monitorar fornecedores quanto a desempenho aceitável de segurança ao longo do ciclo de vida do relacionamento com fornecedores
+Exemplo 6: Exigir contratualmente que os fornecedores divulguem recursos, funções e vulnerabilidades de cibersegurança de seus produtos e serviços durante a vida útil do produto ou o prazo de serviço
+Exemplo 7: Exigem contratualmente que os fornecedores forneçam e mantenham um estoque atual de componentes (por exemplo, software ou material de hardware) para produtos críticos
+Exemplo 8: Exigem contratualmente que os fornecedores avaliem seus funcionários e se protejam contra ameaças internas
+Exemplo 9: Exigem contratualmente que os fornecedores forneçam evidências de práticas aceitáveis de segurança, por exemplo, autoatestado, conformidade com padrões conhecidos, certificações ou inspeções
+Exemplo 10: Especificar em contratos e outros acordos os direitos e responsabilidades da organização, seus fornecedores e suas cadeias de suprimentos, em relação a potenciais riscos de cibersegurança";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-06;"Planejamento e diligência devida são realizados para reduzir riscos antes de entrar em relações formais com fornecedores ou terceiros
+
+Exemplo 1: Realizar uma due diligence detalhada sobre potenciais fornecedores, consistente com o planejamento de compras e proporcional ao nível de risco, criticidade e complexidade de cada relação com fornecedores
+Exemplo 2: Avaliar a adequação das capacidades tecnológicas e de cibersegurança e as práticas de gestão de riscos dos potenciais fornecedores
+Exemplo 3: Realizar avaliações de risco de fornecedores com base nos requisitos de cibersegurança empresarial e aplicáveis
+Exemplo 4: Avaliar a autenticidade, integridade e segurança de produtos críticos antes da aquisição e uso";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-07;"Os riscos apresentados por um fornecedor, seus produtos e serviços, e outros terceiros são compreendidos, registrados, priorizados, avaliados, respondidos e monitorados ao longo da relação
+
+Exemplo 1: Ajustar formatos e frequências de avaliação com base na reputação do terceiro e na criticidade dos produtos ou serviços que eles fornecem
+Exemplo 2: Avaliar as evidências de terceiros de conformidade com os requisitos contratuais de cibersegurança, como autoatestados, garantias, certificações e outros artefatos
+Exemplo 3: Monitorar fornecedores críticos para garantir que estejam cumprindo suas obrigações de segurança ao longo do ciclo de vida da relação com fornecedores, utilizando uma variedade de métodos e técnicas, como inspeções, auditorias, testes ou outras formas de avaliação
+Exemplo 4: Monitorar fornecedores, serviços e produtos críticos para detectar mudanças em seus perfis de risco, e reavaliar a criticidade e o impacto de risco dos fornecedores de acordo
+Exemplo 5: Planeje para interrupções inesperadas relacionadas a fornecedores e cadeia de suprimentos para garantir a continuidade do negócio";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-08;"Fornecedores relevantes e outras partes terceirizadas estão incluídos em atividades de planejamento de incidentes, resposta e recuperação
+
+Exemplo 1: Definir e usar regras e protocolos para reportar atividades de resposta a incidentes e recuperação e o status entre a organização e seus fornecedores
+Exemplo 2: Identificar e documentar os papéis e responsabilidades da organização e de seus fornecedores para a resposta a incidentes
+Exemplo 3: Incluir fornecedores críticos em exercícios e simulações de resposta a incidentes
+Exemplo 4: Definir e coordenar métodos e protocolos de comunicação em crises entre a organização e seus fornecedores críticos
+Exemplo 5: Conduzir sessões colaborativas de lições aprendidas com fornecedores críticos";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-09;"As práticas de segurança da cadeia de suprimentos são integradas aos programas de cibersegurança e gestão de riscos empresariais, e seu desempenho é monitorado ao longo do ciclo de vida do produto e serviço da tecnologia
+
+Exemplo 1: Políticas e procedimentos exigem registros de proveniência para todos os produtos e serviços tecnológicos adquiridos
+Exemplo 2: Periodicamente fornecer relatórios de risco aos líderes sobre como os componentes adquiridos são comprovadamente autênticos e não alterados
+Exemplo 3: Comunicar regularmente entre gerentes de risco de cibersegurança e equipe de operações sobre a necessidade de adquirir patches, atualizações e atualizações de software apenas de fornecedores de software autenticados e confiáveis
+Exemplo 4: Revise as políticas para garantir que elas exijam que pessoal aprovado dos fornecedores realize a manutenção dos produtos dos fornecedores
+Exemplo 5: Políticas e procedimentos exigem a verificação de atualizações em hardware crítico para alterações não autorizadas";;;;;;
+GOVERNAR (GV);Gestão de Riscos na Cadeia de Suprimentos em Cibersegurança (GV. SC);GV. SC-10;"Os planos de gestão de riscos da cadeia de suprimentos em cibersegurança incluem disposições para atividades que ocorrem após a conclusão de uma parceria ou acordo de serviço
+
+Exemplo 1: Estabelecer processos para encerrar relacionamentos críticos em circunstâncias normais e adversas
+Exemplo 2: Definir e implementar planos para suporte de manutenção no fim da vida útil dos componentes e obsolescência
+Exemplo 3: Verifique se o acesso dos fornecedores aos recursos da organização é desativado rapidamente quando não for mais necessário
+Exemplo 4: Verificar se os ativos contendo os dados da organização são devolvidos ou devidamente descartados de forma oportuna, controlada e segura
+Exemplo 5: Desenvolver e executar um plano para encerrar ou transicionar relacionamentos com fornecedores que leve em conta o risco e a resiliência da segurança da cadeia de suprimentos
+Exemplo 6: Mitigar riscos para dados e sistemas criados pela demissão de fornecedores
+Exemplo 7: Gerenciar riscos de vazamento de dados associados à demissão de fornecedores";;;;;;
+IDENTIFICAR (ID);Gestão de Ativos (ID.AM);ID.AM-01;"Os inventários de hardware gerenciados pela organização são mantidos
+
+Exemplo 1: Manter estoques para todos os tipos de hardware, incluindo TI, IoT, OT e dispositivos móveis
+Exemplo 2: Monitorar constantemente redes para detectar novos hardwares e atualizar automaticamente os inventários";;;;;;
+IDENTIFICAR (ID);Gestão de Ativos (ID.AM);ID.AM-02;"São mantidos inventários de softwares, serviços e sistemas gerenciados pela organização
+
+Exemplo 1: Manter inventários para todos os tipos de softwares e serviços, incluindo comerciais prontos para uso, open-source, aplicações personalizadas, serviços de API e aplicações e serviços baseados em nuvem
+Exemplo 2: Monitorar constantemente todas as plataformas, incluindo contêineres e máquinas virtuais, para alterações de software e inventário de serviços
+Exemplo 3: Mantenha um inventário dos sistemas da organização";;;;;;
+IDENTIFICAR (ID);Gestão de Ativos (ID.AM);ID.AM-03;"Representações da comunicação autorizada da rede da organização e dos fluxos de dados internos e externos da rede são mantidas
+
+Exemplo 1: Manter linhas de base de comunicação e fluxos de dados dentro das redes cabeadas e sem fio da organização
+Exemplo 2: Manter linhas de base de comunicação e fluxos de dados entre a organização e terceiros
+Exemplo 3: Manter linhas de base de comunicação e fluxos de dados para o uso da infraestrutura como serviço (IaaS) da organização
+Exemplo 4: Manter a documentação das portas de rede, protocolos e serviços esperados que normalmente são usados entre sistemas autorizados";;;;;;
+IDENTIFICAR (ID);Gestão de Ativos (ID.AM);ID.AM-04;"São mantidos inventários dos serviços prestados pelos fornecedores
+
+Exemplo 1: Inventariar todos os serviços externos utilizados pela organização, incluindo infraestrutura como serviço (IaaS), plataforma como serviço (PaaS) e software como serviço (SaaS); APIs; e outros serviços de aplicação hospedados externamente
+Exemplo 2: Atualize o inventário quando um novo serviço externo for utilizado para garantir o monitoramento adequado de gestão de riscos de cibersegurança do uso desse serviço pela organização";;;;;;
+IDENTIFICAR (ID);Gestão de Ativos (ID.AM);ID.AM-05;"Os ativos são priorizados com base na classificação, criticidade, recursos e impacto na missão
+
+Exemplo 1: Defina critérios para priorizar cada classe de ativos
+Exemplo 2: Aplicar os critérios de priorização aos bens
+Exemplo 3: Acompanhe as prioridades dos ativos e atualize-as periodicamente ou quando ocorrem mudanças significativas na organização";;;;;;
+IDENTIFICAR (ID);Gestão de Ativos (ID.AM);ID.AM-07;"Inventários de dados e metadados correspondentes para tipos de dados designados são mantidos
+
+Exemplo 1: Mantenha uma lista dos tipos de dados designados de interesse (por exemplo, informações pessoais identificáveis, informações de saúde protegidas, números de conta financeira, propriedade intelectual da organização, dados de tecnologia operacional)
+Exemplo 2: Descobrir e analisar continuamente dados ad hoc para identificar novas instâncias de tipos de dados designados
+Exemplo 3: Atribuir classificações de dados a tipos de dados designados por meio de tags ou rótulos
+Exemplo 4: Rastrear a procedência, o proprietário dos dados e a geolocalização de cada instância dos tipos de dados designados";;;;;;
+IDENTIFICAR (ID);Gestão de Ativos (ID.AM);ID.AM-08;"Sistemas, hardware, software, serviços e dados são gerenciados ao longo de seus ciclos de vida
+
+Exemplo 1: Integrar considerações de cibersegurança ao longo dos ciclos de vida de sistemas, hardware, softwares e serviços
+Exemplo 2: Integrar considerações de cibersegurança nos ciclos de vida do produto
+Exemplo 3: Identificar usos não oficiais de tecnologia para atingir objetivos da missão (ou seja, shadow IT)
+Exemplo 4: Identificar periodicamente sistemas, hardware, softwares e serviços redundantes que aumentem desnecessariamente a superfície de ataque da organização
+Exemplo 5: Configurar e proteger corretamente sistemas, hardware, software e serviços antes de sua implantação em produção
+Exemplo 6: Atualizar inventários quando sistemas, hardware, softwares e serviços são movidos ou transferidos dentro da organização
+Exemplo 7: Destruir com segurança os dados armazenados com base na política de retenção de dados da organização usando o método prescrito de destruição, e manter e gerenciar um registro das destruições
+Exemplo8: Sanitizar de forma segura o armazenamento de dados quando o hardware está sendo aposentado, descomissionado, realocado ou enviado para reparos ou substituição
+Exemplo 9: Oferecer métodos para destruir papel, mídia de armazenamento e outras formas físicas de armazenamento de dados";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-01;"Vulnerabilidades em ativos são identificadas, validadas e registradas
+
+Exemplo 1: Usar tecnologias de gerenciamento de vulnerabilidades para identificar softwares não corrigidos e configurados de forma incorreta
+Exemplo2: Avaliar arquiteturas de redes e sistemas em busca de fraquezas de design e implementação que afetam a cibersegurança
+Exemplo 3: Revisar, analisar ou testar softwares desenvolvidos pela organização para identificar vulnerabilidades de design, codificação e configuração padrão
+Exemplo 4: Avaliar instalações que abrigam ativos críticos de computação para vulnerabilidades físicas e problemas de resiliência
+Exemplo 5: Monitorar fontes de inteligência sobre ameaças cibernéticas em busca de informações sobre novas vulnerabilidades em produtos e serviços
+Exemplo 6: Revise processos e procedimentos para identificar fraquezas que possam ser exploradas para afetar a cibersegurança";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-02;"A inteligência sobre ameaças cibernéticas é recebida de fóruns e fontes de compartilhamento de informações
+
+Exemplo 1: Configurar ferramentas e tecnologias de cibersegurança com capacidades de detecção ou resposta para absorver de forma segura feeds de inteligência de ameaças cibernéticas
+Exemplo 2: Receber e revisar avisos de terceiros respeitáveis sobre atores ameaçadores atuais e suas táticas, técnicas e procedimentos (TTPs)
+Exemplo 3: Monitorar fontes de inteligência sobre ameaças cibernéticas em busca de informações sobre os tipos de vulnerabilidades que tecnologias emergentes podem ter";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-03;"Ameaças internas e externas à organização são identificadas e registradas
+
+Exemplo 1: Usar inteligência de ameaças cibernéticas para manter a consciência dos tipos de atores de ameaça que provavelmente vão atacar a organização e os TTPs que eles provavelmente vão usar
+Exemplo 2: Realizar caça a ameaças para procurar sinais de agentes ameaçadores no ambiente
+Exemplo 3: Implementar processos para identificar atores internos de ameaças";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-04;"Impactos potenciais e probabilidades de ameaças que exploram vulnerabilidades são identificados e registrados
+
+Exemplo 1: Líderes empresariais e profissionais de gestão de riscos em cibersegurança trabalham juntos para estimar a probabilidade e o impacto dos cenários de risco e registrá-los em registros de risco
+Exemplo 2: Enumere os potenciais impactos comerciais do acesso não autorizado às comunicações, sistemas e dados da organização processados nesses sistemas ou por esses sistemas
+Exemplo 3: Considerar os impactos potenciais de falhas em cascata para sistemas de sistemas";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-05;"Ameaças, vulnerabilidades, probabilidades e impactos são usados para entender o risco inerente e informar a priorização da resposta ao risco
+
+Exemplo 1: Desenvolver modelos de ameaça para melhor compreender os riscos aos dados e identificar respostas adequadas ao risco
+Exemplo 2: Priorizar a alocação de recursos e investimentos em cibersegurança com base em probabilidades e impactos estimados";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-06;"As respostas ao risco são escolhidas, priorizadas, planejadas, acompanhadas e comunicadas
+
+Exemplo 1: Aplicar os critérios do plano de gerenciamento de vulnerabilidades para decidir se aceita, transfere, mitiga ou evita riscos
+Exemplo 2: Aplicar os critérios do plano de gerenciamento de vulnerabilidades para selecionar controles compensatórios a fim de mitigar riscos
+Exemplo 3: Acompanhar o progresso da implementação da resposta ao risco (por exemplo, plano de ação e marcos [POA&M], registro de riscos, relatório detalhado de riscos)
+Exemplo 4: Usar os achados da avaliação de risco para informar decisões e ações de resposta ao risco
+Exemplo 5: Comunicar respostas de risco planejadas aos stakeholders afetados em ordem de prioridade";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-07;"Mudanças e exceções são gerenciadas, avaliadas quanto ao impacto do risco, registradas e acompanhadas
+
+Exemplo 1: Implementar e seguir procedimentos para a documentação formal, revisão, teste e aprovação de mudanças propostas e exceções solicitadas
+Exemplo 2: Documente os possíveis riscos de fazer ou não cada mudança proposta e forneça orientações sobre como reverter mudanças
+Exemplo 3: Documente os riscos relacionados a cada exceção solicitada e o plano para responder a esses riscos
+Exemplo 4: Revisar periodicamente os riscos aceitos com base em ações ou marcos futuros planejados";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-08;"Processos para receber, analisar e responder a divulgações de vulnerabilidades são estabelecidos
+
+Exemplo 1: Realizar o compartilhamento de informações sobre vulnerabilidades entre a organização e seus fornecedores seguindo as regras e protocolos definidos em contratos
+Exemplo 2: Atribuir responsabilidades e verificar a execução de procedimentos para processamento, análise do impacto e resposta a ameaças, vulnerabilidades ou divulgações de incidentes de cibersegurança por fornecedores, clientes, parceiros e organizações governamentais de cibersegurança";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-09;"A autenticidade e integridade do hardware e software são avaliadas antes da aquisição e uso
+
+Exemplo 1: Avaliar a autenticidade e a cibersegurança de produtos e serviços tecnológicos críticos antes da aquisição e uso";;;;;;
+IDENTIFICAR (ID);Avaliação de Riscos (ID.RA);ID.RA-10;"Fornecedores críticos são avaliados antes da aquisição
+
+Exemplo 1: Realizar avaliações de risco de fornecedores com base nos requisitos de cibersegurança empresarial e aplicáveis, incluindo a cadeia de suprimentos";;;;;;
+IDENTIFICAR (ID);Melhoria (ID.IM);ID.IM-01;"Melhorias são identificadas a partir de avaliações
+
+Exemplo 1: Realizar autoavaliações de serviços críticos que levem em consideração ameaças e TPTs atuais
+Exemplo 2: Investir em avaliações de terceiros ou auditorias independentes da eficácia do programa de cibersegurança da organização para identificar áreas que precisam de melhoria
+Exemplo 3: Avaliar constantemente a conformidade com requisitos selecionados de cibersegurança por meio de meios automatizados";;;;;;
+IDENTIFICAR (ID);Melhoria (ID.IM);ID.IM-02;"Melhorias são identificadas a partir de testes e exercícios de segurança, incluindo aqueles realizados em coordenação com fornecedores e terceiros relevantes
+
+Exemplo 1: Identificar melhorias para futuras atividades de resposta a incidentes com base nos achados das avaliações de resposta a incidentes (por exemplo, exercícios e simulações de simulação, testes, revisões internas, auditorias independentes)
+Exemplo 2: Identificar melhorias para futuras atividades de continuidade dos negócios, recuperação de desastres e resposta a incidentes com base em exercícios realizados em coordenação com prestadores de serviços críticos e fornecedores de produtos
+Exemplo 3: Envolver partes interessadas internas (por exemplo, executivos seniores, departamento jurídico, RH) em testes e exercícios de segurança, conforme apropriado
+Exemplo 4: Realizar testes de penetração para identificar oportunidades de melhorar a postura de segurança de sistemas selecionados de alto risco, conforme aprovado pela liderança
+Exemplo 5: Exercer planos de contingência para responder e recuperar da descoberta de que produtos ou serviços não se originaram com o fornecedor ou parceiro contratado ou foram alterados antes do recebimento
+Exemplo 6: Coletar e analisar métricas de desempenho usando ferramentas e serviços de segurança para informar melhorias no programa de cibersegurança";;;;;;
+IDENTIFICAR (ID);Melhoria (ID.IM);ID.IM-03;"Melhorias são identificadas pela execução dos processos, procedimentos e atividades operacionais
+
+Exemplo 1: Realizar sessões colaborativas de lições aprendidas com fornecedores
+Exemplo 2: Revisar anualmente políticas, processos e procedimentos de cibersegurança para levar em conta as lições aprendidas
+Exemplo 3: Usar métricas para avaliar o desempenho operacional da cibersegurança ao longo do tempo";;;;;;
+IDENTIFICAR (ID);Melhoria (ID.IM);ID.IM-04;"Planos de resposta a incidentes e outros planos de cibersegurança que afetam as operações são estabelecidos, comunicados, mantidos e aprimorados
+
+Exemplo 1: Estabelecer planos de contingência (por exemplo, resposta a incidentes, continuidade de negócios, recuperação de desastres) para responder e se recuperar de eventos adversos que possam interferir nas operações, expor informações confidenciais ou de outra forma colocar em risco a missão e viabilidade da organização
+Exemplo 2: Incluir informações de contato e comunicação, processos para lidar com cenários comuns e critérios para priorização, escalonamento e elevação em todos os planos de contingência
+Exemplo 3: Criar um plano de gerenciamento de vulnerabilidades para identificar e avaliar todos os tipos de vulnerabilidades e para priorizar, testar e implementar respostas ao risco
+Exemplo 4: Comunicar planos de cibersegurança (incluindo atualizações) para os responsáveis por executá-los e para as partes afetadas
+Exemplo 5: Revise e atualize todos os planos de cibersegurança anualmente ou quando for identificada a necessidade de melhorias significativas";;;;;;
+PROTEGER (PR);Gerenciamento de Identidade, Autenticação e Controle de Acesso (PR. AA);PR. AA-01;"Identidades e credenciais para usuários autorizados, serviços e hardware são gerenciados pela organização
+
+Exemplo 1: Iniciar solicitações de novo acesso ou acesso adicional para funcionários, contratados e outros, e acompanhar, revisar e atender as solicitações, com permissão dos proprietários do sistema ou dos dados quando necessário
+Exemplo 2: Emitir, gerenciar e revogar certificados criptográficos e tokens de identidade, chaves criptográficas (ou seja, gerenciamento de chaves) e outras credenciais
+Exemplo 3: Selecione um identificador único para cada dispositivo a partir de características de hardware imutáveis ou um identificador provisionado de forma segura para o dispositivo
+Exemplo 4: Identificar fisicamente o hardware autorizado com um identificador para fins de inventário e manutenção";;;;;;
+PROTEGER (PR);Gerenciamento de Identidade, Autenticação e Controle de Acesso (PR. AA);PR. AA-02;"Identidades são comprovadas e vinculadas a credenciais com base no contexto das interações
+
+Exemplo 1: Verificar a identidade declarada de uma pessoa no momento do registro usando credenciais de identidade emitidas pelo governo (por exemplo, passaporte, visto, carteira de motorista)
+Exemplo 2: Emita uma credencial diferente para cada pessoa (ou seja, sem compartilhamento de credenciais)";;;;;;
+PROTEGER (PR);Gerenciamento de Identidade, Autenticação e Controle de Acesso (PR. AA);PR. AA-03;"Usuários, serviços e hardware são autenticados
+
+Exemplo 1: Exigir autenticação multifator
+Exemplo 2: Aplicar políticas para a força mínima de senhas, PINs e autenticadores similares
+Exemplo 3: Reautenticar periodicamente usuários, serviços e hardware com base no risco (por exemplo, em arquiteturas zero trust)
+Exemplo 4: Garantir que o pessoal autorizado possa acessar contas essenciais para proteger a segurança em condições de emergência";;;;;;
+PROTEGER (PR);Gerenciamento de Identidade, Autenticação e Controle de Acesso (PR. AA);PR. AA-04;"As afirmações de identidade são protegidas, transmitidas e verificadas
+
+Exemplo 1: Proteger asserções de identidade usadas para transmitir autenticação e informações do usuário por meio de sistemas de login único
+Exemplo 2: Proteger asserções de identidade que são usadas para transmitir autenticação e informações do usuário entre sistemas federados
+Exemplo 3: Implementar abordagens baseadas em padrões para asserções de identidade em todos os contextos e seguir todas as orientações para a geração (por exemplo, modelos de dados, metadados), proteção (por exemplo, assinatura digital, criptografia) e verificação (por exemplo, validação de assinatura) das asserções de identidade";;;;;;
+PROTEGER (PR);Gerenciamento de Identidade, Autenticação e Controle de Acesso (PR. AA);PR. AA-05;"Permissões de acesso, direitos e autorizações são definidos em uma política, gerenciados, aplicados e revisados, e incorporam os princípios de menor privilégio e separação de funções
+
+Exemplo 1: Revise os privilégios de acesso lógico e físico periodicamente e sempre que alguém muda de função ou deixa a organização, e prontamente revoge privilégios que não são mais necessários
+Exemplo 2: Leve em conta os atributos do solicitante e do recurso solicitado para decisões de autorização (por exemplo, geolocalização, dia/hora, saúde cibernética do endpoint do solicitante)
+Exemplo 3: Restringir acesso e privilégios ao mínimo necessário (por exemplo, arquitetura zero trust)
+Exemplo 4: Revisar periodicamente os privilégios associados a funções críticas de negócios para confirmar a separação adequada das funções";;;;;;
+PROTEGER (PR);Gerenciamento de Identidade, Autenticação e Controle de Acesso (PR. AA);PR. AA-06;"O acesso físico aos ativos é gerenciado, monitorado e aplicado de acordo com o risco
+
+Exemplo1: Uso de seguranças, câmeras de segurança, entradas trancadas, sistemas de alarme e outros controles físicos para monitorar instalações e restringir o acesso
+Exemplo 2: Empregar controles físicos adicionais de segurança para áreas que contenham ativos de alto risco
+Exemplo 3: Acompanhe convidados, fornecedores e outras entidades em áreas que contenham ativos críticos para o negócio";;;;;;
+PROTEGER (PR);Conscientização e Treinamento (PR. AT);PR. AT-01;"Os funcionários recebem conscientização e treinamento para que possuam o conhecimento e as habilidades necessárias para realizar tarefas gerais levando em mente os riscos de cibersegurança
+
+Exemplo 1: Fornecer conscientização básica e treinamento em cibersegurança a funcionários, contratados, parceiros, fornecedores e todos os outros usuários dos recursos não públicos da organização
+Exemplo 2: Treinar pessoal para reconhecer tentativas de engenharia social e outros ataques comuns, reportar ataques e atividades suspeitas, cumprir políticas de uso aceitável e realizar tarefas básicas de higiene cibernética (por exemplo, correção de software, escolha de senhas, proteção de credenciais)
+Exemplo 3: Explique as consequências das violações da política de cibersegurança, tanto para usuários individuais quanto para a organização como um todo
+Exemplo 4: Avaliar ou testar periodicamente os usuários sobre seu entendimento das práticas básicas de cibersegurança
+Exemplo 5: Exigir revisões anuais para reforçar as práticas existentes e introduzir novas práticas";;;;;;
+PROTEGER (PR);Conscientização e Treinamento (PR. AT);PR. AT-02;"Indivíduos em funções especializadas recebem conscientização e treinamento para que possuam o conhecimento e as habilidades necessárias para realizar tarefas relevantes levando em conta os riscos de cibersegurança
+
+Exemplo 1: Identificar os papéis especializados dentro da organização que exigem treinamento adicional em cibersegurança, como pessoal físico e de cibersegurança, pessoal financeiro, alta liderança e qualquer pessoa com acesso a dados críticos para o negócio
+Exemplo 2: Oferecer conscientização e treinamento em cibersegurança baseados em funções para todos que ocupam funções especializadas, incluindo contratados, parceiros, fornecedores e outras partes
+Exemplo 3: Avaliar ou testar periodicamente os usuários quanto ao seu entendimento das práticas de cibersegurança para seus papéis especializados
+Exemplo 4: Exigir atualizações anuais para reforçar as práticas existentes e introduzir novas práticas";;;;;;
+PROTEGER (PR);Segurança de Dados (PR.DS);PR. DS-01;"A confidencialidade, integridade e disponibilidade dos dados em repouso são protegidas
+
+Exemplo 1: Utilize criptografia, assinaturas digitais e hashes criptográficos para proteger a confidencialidade e integridade dos dados armazenados em arquivos, bancos de dados, imagens de disco de máquinas virtuais, imagens de contêineres e outros recursos
+Exemplo 2: Usar criptografia de disco completa para proteger os dados armazenados nos endpoints dos usuários
+Exemplo 3: Confirme a integridade do software validando assinaturas
+Exemplo 4: Restringir o uso de mídia removível para evitar a exfiltração de dados
+Exemplo 5: Mídia removível fisicamente segura contendo informações sensíveis não criptografadas, como dentro de escritórios ou arquivos trancados";;;;;;
+PROTEGER (PR);Segurança de Dados (PR.DS);PR. DS-02;"A confidencialidade, integridade e disponibilidade dos dados em trânsito são protegidas
+
+Exemplo 1: Uso de criptografia, assinaturas digitais e hashes criptográficos para proteger a confidencialidade e a integridade das comunicações de rede
+Exemplo 2: Criptografar ou bloquear automaticamente e-mails de saída e outras comunicações que contenham dados sensíveis, dependendo da classificação dos dados
+Exemplo 3: Bloquear o acesso a e-mails pessoais, compartilhamento de arquivos, serviços de armazenamento de arquivos e outros aplicativos e serviços de comunicação pessoal a partir de sistemas e redes organizacionais
+Exemplo 4: Evitar o reuso de dados sensíveis em ambientes de produção (por exemplo, registros de clientes) em ambientes de desenvolvimento, testes e outros ambientes não de produção";;;;;;
+PROTEGER (PR);Segurança de Dados (PR.DS);PR. DS-10;"A confidencialidade, integridade e disponibilidade dos dados em uso são protegidas
+
+Exemplo 1: Remover dados que devem permanecer confidenciais (por exemplo, de processadores e memória) assim que não forem mais necessários
+Exemplo 2: Proteger dados em uso contra acesso por outros usuários e processos da mesma plataforma";;;;;;
+PROTEGER (PR);Segurança de Dados (PR.DS);PR. DS-11;"Backups de dados são criados, protegidos, mantidos e testados
+
+Exemplo 1: Fazer backup contínuo de dados críticos quase em tempo real e fazer backup de outros dados frequentemente em cronogramas acordados
+Exemplo 2: Testar backups e restaurações para todos os tipos de fontes de dados pelo menos anualmente
+Exemplo 3: Armazene alguns backups de forma segura offline e fora do local para que um incidente ou desastre não os danifique
+Exemplo 4: Aplicar restrições de separação geográfica e geolocalização para armazenamento de backup de dados";;;;;;
+PROTEGER (PR);Segurança de Plataforma (PR.PS);PR. PS-01;"Práticas de gerenciamento de configuração são estabelecidas e aplicadas
+
+Exemplo 1: Estabelecer, testar, implantar e manter linhas de base reforçadas que aplicam as políticas de cibersegurança da organização e forneçam apenas capacidades essenciais (ou seja, princípio da menor funcionalidade)
+Exemplo 2: Revise todas as configurações padrão que possam impactar a cibersegurança ao instalar ou atualizar software
+Exemplo 3: Monitorar software implementado para desvios em relação às linhas de base aprovadas";;;;;;
+PROTEGER (PR);Segurança de Plataforma (PR.PS);PR. PS-02;"O software é mantido, substituído e removido conforme o risco
+
+Exemplo 1: Realizar correções rotineiras e de emergência dentro dos prazos especificados no plano de gerenciamento de vulnerabilidades
+Exemplo 2: Atualizar imagens de contêineres e implantar novas instâncias de contêiner para substituir, em vez de atualizar instâncias existentes
+Exemplo 3: Substituir versões de software e serviço no fim da vida por versões suportadas e mantidas
+Exemplo 4: Desinstalar e remover softwares e serviços não autorizados que representem riscos excessivos
+Exemplo 5: Desinstalar e remover quaisquer componentes de software desnecessários (por exemplo, utilitários do sistema operacional) que atacantes possam usar de forma inadequada
+Exemplo6: Definir e implementar planos para software e serviços de suporte à manutenção no fim da vida útil e à obsolescência";;;;;;
+PROTEGER (PR);Segurança de Plataforma (PR.PS);PR. PS-03;"O hardware é mantido, substituído e removido conforme o risco
+
+Exemplo 1: Substituir hardware quando ele não possui as capacidades de segurança necessárias ou quando não pode suportar softwares com as capacidades de segurança necessárias
+Exemplo 2: Definir e implementar planos para suporte de manutenção no fim da vida útil de hardware e obsolescência
+Exemplo 3: Realizar a eliminação de hardware de forma segura, responsável e auditável";;;;;;
+PROTEGER (PR);Segurança de Plataforma (PR.PS);PR. PS-04;"Registros de log são gerados e disponibilizados para monitoramento contínuo
+
+Exemplo1: Configurar todos os sistemas operacionais, aplicações e serviços (incluindo serviços baseados em nuvem) para gerar registros de log
+Exemplo 2: Configurar geradores de logs para compartilhar seus logs de forma segura com os sistemas e serviços de infraestrutura de logging da organização
+Exemplo 3: Configurar geradores de logs para registrar os dados necessários por arquiteturas zero-trust";;;;;;
+PROTEGER (PR);Segurança de Plataforma (PR.PS);PR. PS-05;"A instalação e execução de softwares não autorizados são impedidas
+
+Exemplo 1: Quando o risco o justificar, restrinja a execução de software apenas a produtos permitidos ou negue a execução de softwares proibidos e não autorizados
+Exemplo2: Verifique a origem do novo software e a integridade do software antes de instalá-lo
+Exemplo 3: Configurar plataformas para usarem apenas serviços DNS aprovados que bloqueiam o acesso a domínios maliciosos conhecidos
+Exemplo 4: Configurar plataformas para permitir a instalação apenas de softwares aprovados pela organização";;;;;;
+PROTEGER (PR);Segurança de Plataforma (PR.PS);PR. PS-06;"Práticas seguras de desenvolvimento de software são integradas, e seu desempenho é monitorado ao longo de todo o ciclo de vida do desenvolvimento de software
+
+Exemplo 1: Proteger todos os componentes do software desenvolvido pela organização contra adulteração e acesso não autorizado
+Exemplo 2: Proteger todo o software produzido pela organização, com vulnerabilidades mínimas em suas versões
+Exemplo 3: Manter o software usado em ambientes de produção e descartar o software com segurança assim que ele não for mais necessário";;;;;;
+PROTEGER (PR);Resiliência da Infraestrutura Tecnológica (PR. IR);PR. IR-01;"Redes e ambientes são protegidos contra acesso e uso lógico não autorizado
+
+Exemplo 1: Segmentar logicamente redes organizacionais e plataformas baseadas em nuvem de acordo com limites de confiança e tipos de plataforma (por exemplo, TI, IoT, OT, mobile, convidados), e permitir comunicações necessárias apenas entre segmentos
+Exemplo 2: Segmentar logicamente redes organizacionais a partir de redes externas e permitir que apenas comunicações necessárias entrem nas redes da organização a partir das redes externas
+Exemplo 3: Implementar arquiteturas zero trust para restringir o acesso à rede a cada recurso ao mínimo necessário
+Exemplo 4: Verifique a saúde cibernética dos endpoints antes de permitir que eles acessem e usem recursos de produção";;;;;;
+PROTEGER (PR);Resiliência da Infraestrutura Tecnológica (PR. IR);PR. IR-02;"Os ativos tecnológicos da organização estão protegidos contra ameaças ambientais
+
+Exemplo 1: Proteger equipamentos organizacionais contra ameaças ambientais conhecidas, como enchentes, incêndios, vento e calor e umidade excessivos
+Exemplo 2: Incluir proteção contra ameaças ambientais e disposições para infraestrutura operacional adequada nos requisitos para provedores de serviços que operam sistemas em nome da organização";;;;;;
+PROTEGER (PR);Resiliência da Infraestrutura Tecnológica (PR. IR);PR. IR-03;"Mecanismos são implementados para alcançar os requisitos de resiliência em situações normais e adversas
+
+Exemplo 1: Evitar pontos únicos de falha em sistemas e infraestrutura
+Exemplo 2: Use balanceamento de carga para aumentar a capacidade e melhorar a confiabilidade
+Exemplo 3: Utilizar componentes de alta disponibilidade, como armazenamento redundante e fontes de alimentação, para melhorar a confiabilidade do sistema";;;;;;
+PROTEGER (PR);Resiliência da Infraestrutura Tecnológica (PR. IR);PR. IR-04;"Capacidade adequada de recursos para garantir a disponibilidade
+
+Exemplo 1: Monitorar o uso de armazenamento, energia, computação, largura de banda de rede e outros recursos
+Exemplo 2: Prever necessidades futuras e escalar os recursos de acordo";;;;;;
+DETECTAR (DE);Monitoramento Contínuo (DE. CM);DE. CM-01;"Redes e serviços de rede são monitorados para identificar possíveis eventos adversos
+
+Exemplo 1: Monitorar DNS, BGP e outros serviços de rede para eventos adversos
+Exemplo2: Monitorar redes cabeadas e sem fio para conexões de endpoints não autorizados
+Exemplo 3: Monitorar instalações para redes sem fio não autorizadas ou maloneiras
+Exemplo 4: Compare os fluxos reais da rede com as linhas de base para detectar desvios
+Exemplo 5: Monitorar as comunicações de rede para identificar mudanças nas posturas de segurança para fins de zero trust";;;;;;
+DETECTAR (DE);Monitoramento Contínuo (DE. CM);DE. CM-02;"O ambiente físico é monitorado para identificar eventos adversos potenciais
+
+Exemplo 1: Monitorar logs de sistemas físicos de controle de acesso (por exemplo, leitores de crachá) para encontrar padrões de acesso incomuns (por exemplo, desvios da norma) e tentativas de acesso fracassadas
+Exemplo 2: Revise e monitore registros físicos de acesso (por exemplo, do registro de visitantes, folhas de assinatura)
+Exemplo 3: Monitorar os controles físicos de acesso (por exemplo, fechaduras, travas, pinos de dobradiça, alarmes) em busca de sinais de adulteração
+Exemplo 4: Monitorar o ambiente físico usando sistemas de alarme, câmeras e seguranças";;;;;;
+DETECTAR (DE);Monitoramento Contínuo (DE. CM);DE. CM-03;"A atividade do pessoal e o uso da tecnologia são monitorados para identificar eventos adversos potenciais
+
+Exemplo 1: Usar software de análise de comportamento para detectar atividades anômalas dos usuários e mitigar ameaças internas
+Exemplo 2: Monitorar logs de sistemas lógicos de controle de acesso para encontrar padrões de acesso incomuns e tentativas de acesso fracassadas
+Exemplo 3: Monitorar continuamente tecnologia de engano, incluindo contas de usuário, para qualquer uso";;;;;;
+DETECTAR (DE);Monitoramento Contínuo (DE. CM);DE. CM-06;"As atividades e serviços dos provedores externos são monitoradas para identificar possíveis eventos adversos
+
+Exemplo 1: Monitorar as atividades de administração e manutenção remotas e presenciais que provedores externos realizam nos sistemas organizacionais
+Exemplo 2: Monitorar a atividade de serviços baseados em nuvem, provedores de internet e outros provedores de serviços para detectar desvios do comportamento esperado";;;;;;
+DETECTAR (DE);Monitoramento Contínuo (DE. CM);DE. CM-09;"Hardware e software de computação, ambientes de execução e seus dados são monitorados para identificar eventos adversos potenciais
+
+Exemplo 1: Monitorar e-mails, web, compartilhamento de arquivos, serviços de colaboração e outros vetores de ataque comuns para detectar malware, phishing, vazamentos de dados e exfiltração, além de outros eventos adversos
+Exemplo 2: Monitorar tentativas de autenticação para identificar ataques contra credenciais e reutilização não autorizada de credenciais
+Exemplo 3: Monitorar configurações de software para detectar desvios em relação às linhas de base de segurança
+Exemplo 4: Monitorar hardware e software para sinais de adulteração
+Exemplo 5: Utilizar tecnologias com presença nos endpoints para detectar problemas de saúde cibernética (por exemplo, patches ausentes, infecções por malware, software não autorizado) e redirecionar os endpoints para um ambiente de remediação antes que o acesso seja autorizado";;;;;;
+DETECTAR (DE);Análise de Eventos Adversos (DE. AE);DE. AE-02;"Eventos potencialmente adversos são analisados para compreender melhor as atividades associadas
+
+Exemplo 1: Utilizar informações de segurança e gerenciamento de eventos (SIEM) ou outras ferramentas para monitorar continuamente os eventos em busca de atividades maliciosas e suspeitas conhecidas
+Exemplo 2: Utilizar inteligência de ameaças cibernéticas atualizadas em ferramentas de análise de logs para melhorar a precisão da detecção e caracterizar atores ameaçadores, seus métodos e indicadores de comprometimento
+Exemplo 3: Realizar regularmente revisões manuais de eventos de log para tecnologias que não podem ser suficientemente monitoradas por automação
+Exemplo 4: Usar ferramentas de análise de logs para gerar relatórios sobre suas descobertas";;;;;;
+DETECTAR (DE);Análise de Eventos Adversos (DE. AE);DE. AE-03;"As informações são correlacionadas de múltiplas fontes
+
+Exemplo 1: Transferir constantemente dados de log gerados por outras fontes para um número relativamente pequeno de servidores de log
+Exemplo 2: Usar tecnologia de correlação de eventos (por exemplo, SIEM) para coletar informações capturadas por múltiplas fontes
+Exemplo 3: Utilizar inteligência de ameaças cibernéticas para ajudar a correlacionar eventos entre fontes de log";;;;;;
+DETECTAR (DE);Análise de Eventos Adversos (DE. AE);DE. AE-04;"O impacto estimado e o alcance dos eventos adversos são compreendidos
+
+Exemplo 1: Usar SIEMs ou outras ferramentas para estimar impacto e escopo, e revisar e refinar as estimativas
+Exemplo 2: Uma pessoa cria suas próprias estimativas de impacto e escopo";;;;;;
+DETECTAR (DE);Análise de Eventos Adversos (DE. AE);DE. AE-06;"Informações sobre eventos adversos são fornecidas a funcionários autorizados e ferramentas
+
+Exemplo 1: Usar softwares de cibersegurança para gerar alertas e fornecê-los ao centro de operações de segurança (SOC), aos respondentes de incidentes e às ferramentas de resposta a incidentes
+Exemplo 2: Intervenientes de incidentes e outros profissionais autorizados podem acessar os resultados da análise de logs a qualquer momento
+Exemplo 3: Criar e atribuir automaticamente tickets no sistema de tickets da organização quando certos tipos de alertas ocorrem
+Exemplo 4: Criar e atribuir manualmente tickets no sistema de tickets da organização quando a equipe técnica detectar sinais de comprometimento";;;;;;
+DETECTAR (DE);Análise de Eventos Adversos (DE. AE);DE. AE-07;"Inteligência sobre ameaças cibernéticas e outras informações contextuais são integradas à análise
+
+Exemplo 1: Fornecer de forma segura feeds de inteligência de ameaças cibernéticas para tecnologias de detecção, processos e pessoal
+Exemplo 2: Fornecer de forma segura informações desde inventários de ativos até tecnologias de detecção, processos e pessoal
+Exemplo 3: Adquirir e analisar rapidamente divulgações de vulnerabilidades para as tecnologias da organização de fornecedores, fornecedores e avisos de segurança terceirizados";;;;;;
+DETECTAR (DE);Análise de Eventos Adversos (DE. AE);DE. AE-08;"Os incidentes são declarados quando eventos adversos atendem aos critérios definidos de incidente
+
+Exemplo 1: Aplicar critérios de incidente a características conhecidas e assumidas de atividade para determinar se um incidente deve ser declarado
+Exemplo 2: Leve em conta falsos positivos conhecidos ao aplicar critérios de incidente";;;;;;
+RESPONDER (RS);Gerenciamento de Incidentes (RS. MA);RS. MA-01;"O plano de resposta a incidentes é executado em coordenação com terceiros relevantes assim que um incidente é declarado
+
+Exemplo 1: Tecnologias de detecção reportam automaticamente incidentes confirmados
+Exemplo 2: Solicitar assistência em resposta a incidentes ao terceirizador de resposta a incidentes da organização
+Exemplo 3: Designe um líder de incidente para cada incidente
+Exemplo 4: Iniciar a execução de planos adicionais de cibersegurança conforme necessário para apoiar a resposta a incidentes (por exemplo, continuidade do negócio e recuperação de desastres)";;;;;;
+RESPONDER (RS);Gerenciamento de Incidentes (RS. MA);RS. MA-02;"Relatórios de incidentes são triados e validados
+
+Exemplo 1: Revisar preliminarmente os relatórios de incidentes para confirmar que são relacionados à cibersegurança e exigem atividades de resposta a incidentes
+Exemplo 2: Aplicar critérios para estimar a gravidade de um incidente";;;;;;
+RESPONDER (RS);Gerenciamento de Incidentes (RS. MA);RS. MA-03;"Os incidentes são categorizados e priorizados
+
+Exemplo 1: Revisar e categorizar incidentes com base no tipo de incidente (por exemplo, vazamento de dados, ransomware, DDoS, comprometimento de conta)
+Exemplo 2: Priorizar incidentes com base em seu escopo, impacto provável e natureza crítica em tempo
+Exemplo 3: Selecione estratégias de resposta a incidentes ativos equilibrando a necessidade de se recuperar rapidamente de um incidente com a necessidade de observar o atacante ou conduzir uma investigação mais aprofundada";;;;;;
+RESPONDER (RS);Gerenciamento de Incidentes (RS. MA);RS. MA-04;"Os incidentes são escalados ou elevados conforme necessário
+
+Exemplo 1: Rastrear e validar o status de todos os incidentes em andamento
+Exemplo 2: Coordenar a escalada ou elevação de incidentes com partes interessadas internas e externas designadas";;;;;;
+RESPONDER (RS);Gerenciamento de Incidentes (RS. MA);RS. MA-05;"São aplicados os critérios para iniciar a recuperação de incidentes
+
+Exemplo 1: Aplicar critérios de recuperação de incidentes às características conhecidas e assumidas do incidente para determinar se processos de recuperação de incidentes devem ser iniciados
+Exemplo 2: Leve em consideração a possível interrupção operacional das atividades de recuperação de incidentes";;;;;;
+RESPONDER (RS);Análise de Incidentes (RS. AN);RS. AN-03;"A análise é realizada para estabelecer o que ocorreu durante um incidente e a causa raiz do mesmo
+
+Exemplo 1: Determinar a sequência de eventos que ocorreram durante o incidente e quais ativos e recursos estiveram envolvidos em cada evento
+Exemplo 2: Tentar determinar quais vulnerabilidades, ameaças e atores ameaçadores estiveram direta ou indiretamente envolvidos no incidente
+Exemplo 3: Analisar o incidente para encontrar as causas sistêmicas subjacentes
+Exemplo 4: Verifique qualquer tecnologia de engano cibernético para obter informações adicionais sobre o comportamento dos atacantes";;;;;;
+RESPONDER (RS);Análise de Incidentes (RS. AN);RS. AN-06;"As ações realizadas durante uma investigação são registradas, e a integridade e a proveniência dos registros são preservadas
+
+Exemplo 1: Exigir que cada respondente a incidentes e outros (por exemplo, administradores de sistemas, engenheiros de cibersegurança) que realizam tarefas de resposta a incidentes registrem suas ações e tornem o registro imutável
+Exemplo 2: Exigir que o responsável do incidente documente o incidente em detalhes e seja responsável por preservar a integridade da documentação e as fontes de todas as informações reportadas";;;;;;
+RESPONDER (RS);Análise de Incidentes (RS. AN);RS. AN-07;"Dados e metadados de incidentes são coletados, e sua integridade e proveniência são preservadas
+
+Exemplo 1: Coletar, preservar e proteger a integridade de todos os dados e metadados pertinentes do incidente (por exemplo, fonte dos dados, data/hora de coleta) com base nos procedimentos de preservação de evidências e cadeia de custódia";;;;;;
+RESPONDER (RS);Análise de Incidentes (RS. AN);RS. AN-08;"A magnitude de um incidente é estimada e validada
+
+Exemplo 1: Revise outros potenciais alvos do incidente para buscar indicadores de comprometimento e evidências de persistência
+Exemplo 2: Rodar automaticamente ferramentas nos alvos para buscar indicadores de comprometimento e evidências de persistência";;;;;;
+RESPONDER (RS);Relatórios e Comunicação de Resposta a Incidentes (RS.CO);RS. CO-02;"Partes interessadas internas e externas são notificadas sobre incidentes
+
+Exemplo 1: Siga os procedimentos de notificação de violação da organização após descobrir um incidente de violação de dados, incluindo notificar clientes afetados
+Exemplo 2: Notificar parceiros comerciais e clientes sobre incidentes de acordo com os requisitos contratuais.
+Exemplo 3: Notificar agências de aplicação da lei e órgãos reguladores sobre incidentes com base nos critérios do plano de resposta a incidentes e na aprovação da gestão";;;;;;
+RESPONDER (RS);Relatórios e Comunicação de Resposta a Incidentes (RS.CO);RS. CO-03;"As informações são compartilhadas com partes interessadas internas e externas designadas
+
+Exemplo 1: Compartilhar informações de forma segura de acordo com planos de resposta e acordos de compartilhamento de informações
+Exemplo 2: Compartilhar voluntariamente informações sobre os TTPs observados pelo atacante, com todos os dados sensíveis removidos, com um Centro de Compartilhamento e Análise de Informações (ISAC)
+Exemplo 3: Notifique o RH quando ocorrer atividade maliciosa de insiders
+Exemplo 4: Atualizar regularmente a alta liderança sobre o status dos incidentes graves
+Exemplo 5: Siga as regras e protocolos definidos em contratos para compartilhamento de informações sobre incidentes entre a organização e seus fornecedores
+Exemplo 6: Coordenar métodos de comunicação em crise entre a organização e seus fornecedores críticos";;;;;;
+RESPONDER (RS);Mitigação de Incidentes (RS.MI);RS. MI-01;"Os incidentes são contidos
+
+Exemplo 1: Tecnologias de cibersegurança (por exemplo, antivírus) e recursos de cibersegurança de outras tecnologias (por exemplo, sistemas operacionais, dispositivos de infraestrutura de rede) executam automaticamente ações de contenção
+Exemplo 2: Permitir que os respondentes de incidentes selecionem e executem manualmente ações de contenção
+Exemplo 3: Permitir que um terceiro (por exemplo, provedor de serviços de internet, provedor de serviço de segurança gerenciada) realize ações de contenção em nome da organização
+Exemplo 4: Transferir automaticamente endpoints comprometidos para uma rede local virtual (VLAN) de remediação";;;;;;
+RESPONDER (RS);Mitigação de Incidentes (RS.MI);RS. MI-02;"Incidentes são erradicados
+
+Exemplo 1: Tecnologias de cibersegurança e recursos de cibersegurança de outras tecnologias (por exemplo, sistemas operacionais, dispositivos de infraestrutura de rede) executam automaticamente ações de erradicação
+Exemplo 2: Permitir que os respondentes de incidentes selecionem e executem manualmente ações de erradicação
+Exemplo 3: Permitir que um terceiro (por exemplo, provedor de serviços de segurança gerenciada) realize ações de erradicação em nome da organização";;;;;;
+RECUPERAR (RC);Execução do Plano de Recuperação de Incidentes (RC. RP);RC. RP-01;"A parte de recuperação do plano de resposta a incidentes é executada uma vez iniciada pelo processo de resposta a incidentes
+
+Exemplo 1: Iniciar procedimentos de recuperação durante ou após processos de resposta a incidentes
+Exemplo 2: Informar todas as pessoas com responsabilidades de recuperação sobre os planos de recuperação e as autorizações necessárias para implementar cada aspecto dos planos";;;;;;
+RECUPERAR (RC);Execução do Plano de Recuperação de Incidentes (RC. RP);RC. RP-02;"As ações de recuperação são selecionadas, definidas, priorizadas e realizadas
+
+Exemplo 1: Selecione ações de recuperação com base nos critérios definidos no plano de resposta a incidentes e nos recursos disponíveis
+Exemplo 2: Ações de recuperação planejadas de mudança baseadas em uma reavaliação das necessidades e recursos organizacionais";;;;;;
+RECUPERAR (RC);Execução do Plano de Recuperação de Incidentes (RC. RP);RC. RP-03;"A integridade dos backups e outros recursos de restauração é verificada antes de usá-los para restauração
+
+Exemplo 1: Verifique os ativos de restauração para sinais de comprometimento, corrupção de arquivos e outros problemas de integridade antes do uso";;;;;;
+RECUPERAR (RC);Execução do Plano de Recuperação de Incidentes (RC. RP);RC. RP-04;"Funções críticas da missão e gestão de riscos de cibersegurança são consideradas para estabelecer normas operacionais pós-incidentes
+
+Exemplo 1: Utilizar registros de impacto no negócio e categorização do sistema (incluindo objetivos de prestação de serviços) para validar que os serviços essenciais são restaurados na ordem apropriada
+Exemplo 2: Trabalhar com os proprietários dos sistemas para confirmar a restauração bem-sucedida dos sistemas e o retorno às operações normais
+Exemplo 3: Monitorar o desempenho dos sistemas restaurados para verificar a adequação da restauração";;;;;;
+RECUPERAR (RC);Execução do Plano de Recuperação de Incidentes (RC. RP);RC. RP-05;"A integridade dos ativos restaurados é verificada, sistemas e serviços restaurados, e o status operacional normal é confirmado
+
+Exemplo 1: Verifique os ativos restaurados em busca de sinais de comprometimento e remediação das causas raízes do incidente antes do uso em produção
+Exemplo 2: Verifique a correção e adequação das ações de restauração tomadas antes de colocar um sistema restaurado online";;;;;;
+RECUPERAR (RC);Execução do Plano de Recuperação de Incidentes (RC. RP);RC. RP-06;"O fim da recuperação do incidente é declarado com base em critérios, e a documentação relacionada ao incidente é concluída
+
+Exemplo 1: Preparar um relatório pós-ação que documente o próprio incidente, as ações de resposta e recuperação tomadas, e as lições aprendidas
+Exemplo 2: Declarar o fim da recuperação de incidentes assim que os critérios forem cumpridos";;;;;;
+RECUPERAR (RC);Comunicação de Recuperação de Incidentes (RC.CO);RC. CO-03;"As atividades de recuperação e o progresso na restauração das capacidades operacionais são comunicados aos stakeholders internos e externos designados
+
+Exemplo 1: Compartilhar de forma segura informações de recuperação, incluindo progresso da restauração, consistente com planos de resposta e acordos de compartilhamento de informações
+Exemplo 2: Atualizar regularmente a alta liderança sobre o status da recuperação e o progresso da restauração para incidentes graves
+Exemplo 3: Siga as regras e protocolos definidos em contratos para compartilhamento de informações sobre incidentes entre a organização e seus fornecedores
+Exemplo 4: Coordenar a comunicação em crise entre a organização e seus fornecedores críticos";;;;;;
+RECUPERAR (RC);Comunicação de Recuperação de Incidentes (RC.CO);RC. CO-04;"Atualizações públicas sobre recuperação de incidentes são compartilhadas usando métodos e mensagens aprovados
+
+Exemplo 1: Siga os procedimentos de notificação de violações da organização para recuperação de um incidente de violação de dados
+Exemplo 2: Explique as medidas tomadas para se recuperar do incidente e evitar uma recorrência";;;;;;
