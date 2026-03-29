@@ -1,28 +1,50 @@
+<<<<<<< HEAD
 ﻿;;;
 ;;;
 Nível de maturidade;Governança de Riscos de Cibersegurança;Gestão de Riscos em Cibersegurança;Pontuação
+=======
+﻿;;;
+;;;
+Nível de maturidade;Governança de Riscos de Cibersegurança;Gestão de Riscos em Cibersegurança;Pontuação
+>>>>>>> main
 Nível 1: Parcial;"A aplicação da estratégia organizacional de risco de cibersegurança é gerenciada de forma ad hoc.
 A priorização é pontual e não baseada formalmente em objetivos ou ambiente de ameaça";"Há uma conscientização limitada sobre os riscos de cibersegurança no nível organizacional.
 A organização implementa a gestão de riscos de cibersegurança de forma irregular, caso a caso.
 A organização pode não ter processos que permitam o compartilhamento de informações de cibersegurança dentro da organização.
 A organização geralmente desconhece os riscos de cibersegurança associados aos seus fornecedores e à
+<<<<<<< HEAD
 produtos e serviços que adquire e utiliza.";1
+=======
+produtos e serviços que adquire e utiliza.";1
+>>>>>>> main
 Nível 2: Informado sobre Riscos;"As práticas de gestão de riscos são aprovadas pela administração, mas podem não ser estabelecidas como uma política organizacional.
 A priorização das atividades e necessidades de proteção de cibersegurança é diretamente informada pelos objetivos de risco organizacionais, pelo ambiente de ameaça ou pelos requisitos de negócios/missão.";"Há uma consciência dos riscos de cibersegurança no nível organizacional, mas uma abordagem organizacional para gerenciar esses riscos ainda não foi estabelecida.
 A consideração da cibersegurança nos objetivos e programas organizacionais pode ocorrer em alguns, mas não em todos os níveis da organização. 
 A avaliação de risco cibernético de ativos organizacionais e externos ocorre, mas normalmente não é repetível ou recorrente.
 As informações de cibersegurança são compartilhadas dentro da organização de forma informal.
+<<<<<<< HEAD
 A organização está ciente dos riscos de cibersegurança associados a seus fornecedores e aos produtos e serviços que adquire e utiliza, mas não age de forma consistente ou formal em resposta a esses riscos.";2
+=======
+A organização está ciente dos riscos de cibersegurança associados a seus fornecedores e aos produtos e serviços que adquire e utiliza, mas não age de forma consistente ou formal em resposta a esses riscos.";2
+>>>>>>> main
 Nível 3: Repetível;"As práticas de gestão de riscos da organização são formalmente aprovadas e expressas como política.
 Políticas, processos e procedimentos informados sobre riscos são definidos, implementados conforme pretendido e revisados.
 As práticas organizacionais de cibersegurança são regularmente atualizadas com base na aplicação dos processos de gestão de riscos a mudanças nos requisitos de negócio/missão, ameaças e cenário tecnológico.";"Existe uma abordagem organizacional para gerenciar riscos de cibersegurança. Informações de cibersegurança são rotineiramente compartilhadas em toda a organização.
 Existem métodos consistentes para responder efetivamente às mudanças de risco. O pessoal possui o conhecimento e as habilidades para desempenhar suas funções e responsabilidades designadas.
 A organização monitora de forma consistente e precisa os riscos de cibersegurança dos ativos. Executivos seniores de cibersegurança e não cibersegurança se comunicam regularmente sobre riscos de cibersegurança. Os executivos garantem que a cibersegurança seja considerada em todas as linhas de operação da organização. 
+<<<<<<< HEAD
 A estratégia de risco organizacional é informada pelos riscos de cibersegurança associados aos seus fornecedores e aos produtos e serviços que adquire e utiliza. O pessoal age formalmente sobre esses riscos por meio de mecanismos como acordos escritos para comunicar requisitos básicos, estruturas de governança (por exemplo, conselhos de risco) e implementação e monitoramento de políticas. Essas ações são implementadas de forma consistente e conforme o esperado, e são continuamente monitoradas e revisadas.";3
+=======
+A estratégia de risco organizacional é informada pelos riscos de cibersegurança associados aos seus fornecedores e aos produtos e serviços que adquire e utiliza. O pessoal age formalmente sobre esses riscos por meio de mecanismos como acordos escritos para comunicar requisitos básicos, estruturas de governança (por exemplo, conselhos de risco) e implementação e monitoramento de políticas. Essas ações são implementadas de forma consistente e conforme o esperado, e são continuamente monitoradas e revisadas.";3
+>>>>>>> main
 Nível 4: Adaptativo;"Existe uma abordagem organizacional para gerenciar riscos de cibersegurança, utilizando políticas, processos e procedimentos informados sobre riscos para lidar com potenciais eventos de cibersegurança. A relação entre a cibersegurança
 Os riscos e objetivos organizacionais são claramente compreendidos e considerados ao tomar decisões. Executivos monitoram os riscos de cibersegurança no mesmo contexto que os riscos financeiros e outros riscos organizacionais. O orçamento organizacional é baseado na compreensão do ambiente de risco atual e previsto e da tolerância ao risco.
 As unidades de negócios implementam a visão executiva e analisam riscos em nível de sistema no contexto da tolerância ao risco organizacional.
 A gestão de riscos em cibersegurança faz parte da cultura organizacional. Ela evolui a partir de uma consciência das atividades anteriores e da consciência contínua das atividades em sistemas e redes organizacionais. A organização pode contabilizar rápida e eficientemente mudanças nos objetivos de negócio/missão na forma como o risco é abordado e comunicado.";"A organização adapta suas práticas de cibersegurança com base em atividades anteriores e atuais, incluindo lições aprendidas e indicadores preditivos.
 Por meio de um processo de melhoria contínua que incorpora tecnologias e práticas avançadas de cibersegurança, a organização se adapta ativamente a um cenário tecnológico em mudança e responde de maneira oportuna e eficaz a ameaças sofisticadas e em evolução.
 A organização utiliza informações em tempo real ou quase em tempo real para entender e agir consistentemente sobre os riscos de cibersegurança associados aos seus fornecedores e aos produtos e serviços que adquire e utiliza.
+<<<<<<< HEAD
 As informações de cibersegurança são constantemente compartilhadas em toda a organização e com terceiros autorizados";4
+=======
+As informações de cibersegurança são constantemente compartilhadas em toda a organização e com terceiros autorizados";4
+>>>>>>> main

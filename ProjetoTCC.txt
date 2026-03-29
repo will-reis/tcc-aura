@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ProjetoTCC/
 │
 ├── corpus/                 <-- (Antiga pasta 'documentos'. Soa mais acadêmico)
@@ -16,4 +17,24 @@ ProjetoTCC/
 
 pip install langchain-community langchain
 pip install langchain-chroma pypdf langchain-ollama pandas openpyxl
+=======
+ProjetoTCC/
+│
+├── corpus/                 <-- (Antiga pasta 'documentos'. Soa mais acadêmico)
+│   ├── entrevista_01.txt
+│   └── politica_seguranca.pdf
+│
+├── data/                   <-- (Pasta para os CSVs de entrada)
+│   ├── nist_controls.csv   <-- (Antigo NIST_Requisitos)
+│   └── nist_rubrics.csv    <-- (Antigo NIST_Definicoes - 'Rubrics' é termo técnico para critério de avaliação)
+│
+├── vector_store/           <-- (A pasta do banco gerada automaticamente)
+├── output/                 <-- (Onde o resultado será salvo)
+│
+├── ingestion.py            <-- (O script que cria o banco)
+└── main.py                 <-- (O sistema auditor principal)
+
+pip install langchain-community langchain
+pip install langchain-chroma pypdf langchain-ollama pandas openpyxl
+>>>>>>> main
 python 3.12.8 - https://www.python.org/ftp/python/3.12.8/
