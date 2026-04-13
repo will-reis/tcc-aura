@@ -13,7 +13,8 @@ from langchain_ollama import OllamaEmbeddings
 # Configurações de Diretório
 CORPUS_PATH = "corpus"
 VECTOR_STORE_PATH = "vector_store"
-MODEL_NAME = "llama3"
+MODEL_NAME = "qwen3:8"  
+EMBEDDING_MODEL = "nomic-embed-text"
 
 def initialize_vector_store():
     """Lê documentos e recria o índice vetorial local."""
@@ -61,7 +62,7 @@ def initialize_vector_store():
     if os.path.exists(VECTOR_STORE_PATH):
         shutil.rmtree(VECTOR_STORE_PATH)
 
-    embedding_fn = OllamaEmbeddings(model=MODEL_NAME)
+    embedding_fn = OllamaEmbeddings(model=EMBEDDING_MODEL)
     
     vector_db = Chroma.from_documents(
         documents=chunks, 
