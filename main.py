@@ -1,25 +1,34 @@
 """
-NIST CSF 2.0 Compliance Audit Engine - Versão Final (Rastreabilidade + Recomendações).
+AURA - Automated Risk Assessment.
+Versão Modular (IA separada do Banco de Dados).
 """
 
 import os
 import sys
 import pandas as pd
+import json
+import uuid
+from datetime import datetime
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_chroma import Chroma
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import JsonOutputParser
 
-# --- Configurações ---
+# 🌟 IMPORTAÇÃO DO NOSSO NOVO MÓDULO DE BANCO DE DADOS 🌟
+from database import save_to_mysql
+
+# --- Configurações Globais ---
 DATA_DIR = "data"
 OUTPUT_DIR = "output"
 VECTOR_STORE_PATH = "vector_store"
 
 INPUT_FILENAME = "NIST_Requisitos.csv"
 RUBRIC_FILENAME = "NIST_Definicoes.csv"
-REPORT_FILENAME = "Relatorio_Auditoria_Final.csv"
+REPORT_FILENAME = "Relatorio_Auditoria_Final.jsonl"
 
-LLM_MODEL = "llama3"
+# Lembre-se de mudar aqui para o modelo Qwen que você baixou
+LLM_MODEL = "qwen3:8b"
+EMBEDDING_MODEL = "nomic-embed-text"
 
 def load_assessment_rubrics(filepath: str) -> str:
     """Carrega as definições de maturidade (Gabarito)."""
@@ -38,43 +47,52 @@ def load_assessment_rubrics(filepath: str) -> str:
     except Exception as e:
         sys.exit(f"[FATAL] Erro ao ler definições: {e}")
 
-def get_strict_auditor_chain(rules_context):
-    """Configura o cérebro da IA com instruções para Fonte e Recomendações."""
-    
+def get_skeptical_auditor_chain(rules_context):
+    """Configura a IA com instruções Céticas e saída em JSON estruturado."""
     llm = ChatOllama(model=LLM_MODEL, temperature=0, format="json")
     
     audit_template = """
-    Você é um Auditor Rígido do NIST CSF 2.0.
-    
-    SUA TAREFA:
-    Preencher a planilha de avaliação com base ESTRITAMENTE nas evidências fornecidas.
-    
-    REGRAS DE MATURIDADE (GABARITO):
+    Você é um Auditor Sênior e Especialista no framework NIST CSF 2.0.
+    Sua análise é baseada estritamente no CONTEXTO fornecido, sendo rigoroso.
+
+    ATENÇÃO - TRATAMENTO DE TRANSCRIÇÕES:
+    As principais fontes podem ser transcrições de entrevistas geradas por IA. Tolere erros de digitação, falhas de concordância ou palavras sem sentido (alucinações de áudio), focando sempre na intenção e no contexto técnico da conversa para extrair as evidências.
+
+    GABARITO DE MATURIDADE:
     {rules}
     
-    CONTROLE A SER AUDITADO:
+    CONTROLE ALVO:
     ID: {subcat}
     Descrição: {desc}
     
-    EVIDÊNCIAS DOS ARQUIVOS (CONTEXTO COM FONTES):
+    CONTEXTO RECUPERADO:
     {context}
     
-    DIRETRIZES OBRIGATÓRIAS:
-    1. IDIOMA: Responda SEMPRE em PORTUGUÊS do Brasil.
-    2. RASTREABILIDADE: Na evidência, você DEVE citar o nome do arquivo de onde tirou a informação (ex: "[FONTE: entrevista.txt] O usuário disse...").
-    3. RECOMENDAÇÃO: Se houver Gaps, sugira uma ação prática para resolvê-lo (ex: "Elaborar política formal", "Implementar MFA").
-    4. HONESTIDADE: Se não houver menção no contexto, responda "Não Avaliado".
-    5. Se o Contexto não tem relação direta com o ID {subcat}, RESPOSTA: "Não Avaliado".
-    6. NÃO TENTE AJUDAR. Seja frio e literal.
-
-    FORMATO DE SAÍDA (JSON):
+    REGRAS DE PONTUAÇÃO (Siga estritamente esta ordem lógica):
+    * NOTA 4 (Nível 4): Extremamente perfeito. A entrevista confirma a aplicação prática do controle, há documentação completa detalhando o processo, e NÃO há nenhum gap identificado (teórico ou prático), ou seja, caso exista um gap a nota já não poderá ser 4, mas deve ser inferior.
+    * NOTA 3 (Nível 3): A entrevista/contexto confirma que o assunto da subcategoria ESTÁ SENDO APLICADO na prática com base em um processo ou procedimento definido e documentado,mesmo que a documentação tenha pequenos gaps.
+    * NOTA 2 (Nível 2): O processo NÃO foi citado como aplicado na prática, PORÉM existe documentação ou procedimento formal definindo como aquele tópico deve ser feito.
+    * NOTA 1 (Nível 1): Pior cenário. Não há citação de aplicação prática e não há nenhuma definição, política ou documentação sobre o tópico em lugar algum.
+    
+    DIRETRIZES DE SAÍDA:
+    - CENÁRIO ATUAL: Descreva a situação atual da organização.
+    - EVIDÊNCIA: Se houver, descreva o trecho que baseou sua nota e liste TODAS as fontes (ex: [FONTE: doc1.pdf, transcricao.txt]).
+    - GAPS: Liste todas as falhas na atuação prática ou falta de detalhamento em documentos. (Se a nota for 4, diga "Nenhum Gap").
+    - RECOMENDAÇÕES: Forneça um plano de ação para atingir o PRÓXIMO nível de maturidade (Ex: Se tirou nota 2, o que falta para tirar nota 3?). DEVE SER UM ARRAY (LISTA) DE STRINGS.
+    
+    FORMATO OBRIGATÓRIO DE SAÍDA (JSON PURO):
+    Você é uma API. Retorne APENAS um objeto JSON válido. 
+    NÃO inclua texto antes ou depois. 
+    NÃO use blocos de código markdown (como ```json).
+    A resposta deve começar com {{ e terminar com }}.
+    
     {{
-        "nivel": "String (ex: Nível 1: Parcial)",
-        "pontuacao": Inteiro (ex: 1),
-        "cenario": "Resumo da situação encontrada...",
-        "evidencia": "Citação do texto + [FONTE: Nome do Arquivo]",
-        "gaps": "O que falta para o próximo nível...",
-        "recomendacao": "Ação corretiva sugerida..."
+        "nivel": "Nível X... (ou Não Avaliado)",
+        "pontuacao": 0,
+        "cenario": "...",
+        "evidencia": "...",
+        "gaps": "...",
+        "recomendacoes": ["Ação 1", "Ação 2"]
     }}
     """
     
@@ -86,100 +104,77 @@ def get_strict_auditor_chain(rules_context):
     return prompt | llm | JsonOutputParser()
 
 def execute_audit_process():
-    print(f"[*] Iniciando Auditoria NIST CSF v2.0...")
+    print(f"[*] Iniciando Auditoria NIST CSF v2.0 com modelo de IA {LLM_MODEL}...")
     
     if not os.path.exists(VECTOR_STORE_PATH):
-        sys.exit("[ERROR] Banco de dados não encontrado. Rode 'ingestion.py' primeiro.")
+        sys.exit("[ERROR] Banco de dados vetorial não encontrado.")
 
-    embedding_fn = OllamaEmbeddings(model=LLM_MODEL)
+    embedding_fn = OllamaEmbeddings(model=EMBEDDING_MODEL)
     vector_db = Chroma(persist_directory=VECTOR_STORE_PATH, embedding_function=embedding_fn)
     
     rubric_path = os.path.join(DATA_DIR, RUBRIC_FILENAME)
     rubrics_context = load_assessment_rubrics(rubric_path)
     
-    audit_chain = get_strict_auditor_chain(rubrics_context)
+    audit_chain = get_skeptical_auditor_chain(rubrics_context)
 
-    # 2. Carregar Planilha
     input_path = os.path.join(DATA_DIR, INPUT_FILENAME)
     try:
         df_controls = pd.read_csv(input_path, header=1, sep=';', encoding='utf-8')
-        
-        # --- PREPARAÇÃO DAS COLUNAS (Fix Float64) ---
-        colunas_alvo = [
-            'Nivel de Maturidade Atual', 
-            'Cenário Atual', 
-            'Evidência/Fonte', 
-            'Gaps', 
-            'Recomendações'
-        ]
-        
-        # Converte para Object (Texto) para evitar erros
-        for col in colunas_alvo:
-            if col in df_controls.columns:
-                df_controls[col] = df_controls[col].astype('object')
-            else:
-                # Se a coluna não existir, cria ela vazia
-                df_controls[col] = None
-
-        # Remove colunas lixo (Unnamed)
-        df_controls = df_controls.loc[:, ~df_controls.columns.str.contains('^Unnamed')]
-        
         target_controls = df_controls[df_controls['Subcategoria'].notna()].copy()
-
     except Exception as e:
-        sys.exit(f"[ERROR] Erro ao ler planilha de requisitos: {e}")
+        sys.exit(f"[ERROR] Erro ao ler planilha base: {e}")
 
     total = len(target_controls)
-    print(f"[*] Total de controles a verificar: {total}")
+    id_lote_auditoria = str(uuid.uuid4())
+    data_hora_atual = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
+    jsonl_records = []
     count = 0
+    
     for idx, row in target_controls.iterrows():
         count += 1
         cid = row['Subcategoria']
         cdesc = row['Descrição da subcategoria']
-        
         print(f"    [{count}/{total}] Auditando {cid}...", end="\r")
         
-        # --- BUSCA INTELIGENTE COM FONTE ---
-        query = f"{cid} {cdesc} evidência prática política implementação"
-        docs = vector_db.similarity_search(query, k=4)
-        
-        # Monta o contexto inserindo o nome do arquivo explicitamente
-        context_parts = []
-        for d in docs:
-            # Pega o nome do arquivo nos metadados (ou 'Desconhecido')
-            source_name = os.path.basename(d.metadata.get('source', 'Arquivo Desconhecido'))
-            context_parts.append(f"[[FONTE: {source_name}]]\nCONTEÚDO: {d.page_content}")
-            
-        context_str = "\n---\n".join(context_parts)
+        docs = vector_db.similarity_search(f"{cid} {cdesc}", k=5)
+        context_str = "\n---\n".join([f"[[FONTE: {os.path.basename(d.metadata.get('source', 'N/A'))}]]\n{d.page_content}" for d in docs])
         
         try:
-            result = audit_chain.invoke({
-                "rules": rubrics_context,
-                "subcat": cid,
-                "desc": cdesc,
-                "context": context_str
-            })
+            result = audit_chain.invoke({"rules": rubrics_context, "subcat": cid, "desc": cdesc, "context": context_str})
             
-            # --- PREENCHIMENTO ---
-            df_controls.at[idx, 'Nivel de Maturidade Atual'] = str(result.get('nivel'))
-            df_controls.at[idx, 'Pontuação Atual'] = result.get('pontuacao')
-            df_controls.at[idx, 'Cenário Atual'] = str(result.get('cenario'))
-            df_controls.at[idx, 'Evidência/Fonte'] = str(result.get('evidencia'))
-            df_controls.at[idx, 'Gaps'] = str(result.get('gaps'))
-            # Agora preenche a recomendação real
-            df_controls.at[idx, 'Recomendações'] = str(result.get('recomendacao'))
-            
+            # Formatação do registro
+            record = {
+                "registro_id": str(uuid.uuid4()),
+                "auditoria_id": id_lote_auditoria,
+                "data_avaliacao": data_hora_atual,
+                "funcao": row.get('Função', 'N/A'),
+                "categoria": row.get('Categoria', 'N/A'),
+                "subcategoria_id": cid,
+                "descricao": cdesc,
+                "nivel_maturidade": result.get('nivel', 'Não Avaliado'),
+                "pontuacao": result.get('pontuacao', 0),
+                "cenario_atual": result.get('cenario', ''),
+                "evidencia": result.get('evidencia', ''),
+                "gaps": str(result.get('gaps', '')),
+                "recomendacoes": result.get('recomendacoes', [])
+            }
+            jsonl_records.append(record)
         except Exception as e:
-            print(f"\n[WARN] Erro no controle {cid}: {e}")
+            print(f"\n[WARN] Erro em {cid}: {e}")
 
-    if not os.path.exists(OUTPUT_DIR):
-        os.makedirs(OUTPUT_DIR)
-        
+    # Salvar JSONL
+    if not os.path.exists(OUTPUT_DIR): os.makedirs(OUTPUT_DIR)
     final_path = os.path.join(OUTPUT_DIR, REPORT_FILENAME)
-    df_controls.to_csv(final_path, index=False, sep=';', encoding='utf-8-sig')
+    with open(final_path, 'w', encoding='utf-8') as f:
+        for record in jsonl_records:
+            f.write(json.dumps(record, ensure_ascii=False) + '\n')
     
-    print(f"\n\n[SUCCESS] Relatório salvo em: {final_path}")
+    # SALVAR NO MYSQL
+    if jsonl_records:
+        save_to_mysql(jsonl_records)
+    
+    print(f"\n\n[SUCCESS] Auditoria Finalizada. Resultados em {final_path} e no Banco de Dados.")
 
 if __name__ == "__main__":
     execute_audit_process()
