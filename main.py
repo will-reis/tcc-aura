@@ -33,7 +33,7 @@ EMBEDDING_MODEL = "nomic-embed-text"
 def load_assessment_rubrics(filepath: str) -> str:
     """Carrega as definições de maturidade (Gabarito)."""
     if not os.path.exists(filepath):
-        sys.exit(f"[FATAL] Arquivo de definições não encontrado: {filepath}")
+        raise FileNotFoundError(f"[FATAL] Arquivo de definições não encontrado: {filepath}")
 
     try:
         df = pd.read_csv(filepath, header=2, sep=';', encoding='utf-8')
@@ -45,7 +45,7 @@ def load_assessment_rubrics(filepath: str) -> str:
                 rules_buffer.append(f"- {level}: {criteria}")
         return "\n".join(rules_buffer)
     except Exception as e:
-        sys.exit(f"[FATAL] Erro ao ler definições: {e}")
+        raise RuntimeError(f"[FATAL] Erro ao ler definições: {e}") from e
 
 def get_skeptical_auditor_chain(rules_context):
     """Configura a IA com instruções Céticas e saída em JSON estruturado."""
@@ -103,11 +103,11 @@ def get_skeptical_auditor_chain(rules_context):
     
     return prompt | llm | JsonOutputParser()
 
-def execute_audit_process():
+def execute_audit_process(save_output: bool = True, save_db: bool = True):
     print(f"[*] Iniciando Auditoria NIST CSF v2.0 com modelo de IA {LLM_MODEL}...")
     
     if not os.path.exists(VECTOR_STORE_PATH):
-        sys.exit("[ERROR] Banco de dados vetorial não encontrado.")
+        raise FileNotFoundError("[ERROR] Banco de dados vetorial não encontrado.")
 
     embedding_fn = OllamaEmbeddings(model=EMBEDDING_MODEL)
     vector_db = Chroma(persist_directory=VECTOR_STORE_PATH, embedding_function=embedding_fn)
@@ -122,7 +122,7 @@ def execute_audit_process():
         df_controls = pd.read_csv(input_path, header=1, sep=';', encoding='utf-8')
         target_controls = df_controls[df_controls['Subcategoria'].notna()].copy()
     except Exception as e:
-        sys.exit(f"[ERROR] Erro ao ler planilha base: {e}")
+        raise RuntimeError(f"[ERROR] Erro ao ler planilha base: {e}") from e
 
     total = len(target_controls)
     id_lote_auditoria = str(uuid.uuid4())
@@ -163,18 +163,29 @@ def execute_audit_process():
         except Exception as e:
             print(f"\n[WARN] Erro em {cid}: {e}")
 
-    # Salvar JSONL
-    if not os.path.exists(OUTPUT_DIR): os.makedirs(OUTPUT_DIR)
     final_path = os.path.join(OUTPUT_DIR, REPORT_FILENAME)
-    with open(final_path, 'w', encoding='utf-8') as f:
-        for record in jsonl_records:
-            f.write(json.dumps(record, ensure_ascii=False) + '\n')
+    if save_output:
+        if not os.path.exists(OUTPUT_DIR):
+            os.makedirs(OUTPUT_DIR)
+        with open(final_path, 'w', encoding='utf-8') as f:
+            for record in jsonl_records:
+                f.write(json.dumps(record, ensure_ascii=False) + '\n')
     
     # SALVAR NO MYSQL
-    if jsonl_records:
+    if save_db and jsonl_records:
         save_to_mysql(jsonl_records)
     
     print(f"\n\n[SUCCESS] Auditoria Finalizada. Resultados em {final_path} e no Banco de Dados.")
+    return {
+        "auditoria_id": id_lote_auditoria,
+        "total_controles": total,
+        "total_registros": len(jsonl_records),
+        "relatorio_path": final_path,
+        "registros": jsonl_records,
+    }
 
 if __name__ == "__main__":
-    execute_audit_process()
+    try:
+        execute_audit_process()
+    except Exception as exc:
+        sys.exit(str(exc))
